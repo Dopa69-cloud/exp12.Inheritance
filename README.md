@@ -77,3 +77,30 @@ FORD Mustang
 (4 seater)
 mileage:8 kmpl
 
+Program-4: Hierarchical Inheritance
+This program demonstrates the concept of hierarchical inheritance combined with multilevel inheritance (hybrid inheritance) in C++. The base class Entc contains the total number of students. From this class, two branches are created: Vlsi and Embedded, each representing specialized domains. Further, Verifengg and Designengg are derived from Vlsi, while Developer and Micro are derived from Embedded. This structure creates a tree-like hierarchy where multiple classes share common properties from a single base class. In the main() function, objects of different derived classes are created, and student data is assigned for each specialization. This illustrates how hybrid inheritance allows organizing data across multiple related categories while reusing the base class attributes.
+
+--> Algorithm:
+1.Start the program.
+
+2.Define a base class Entc with a data member students to store total students.
+
+3.Define two derived classes from Entc: --Vlsi for VLSI department. --Embedded for Embedded Systems department.
+
+4.Define further derived classes: --From Vlsi: Verifengg (Verification Engineers) and Designengg (Design Engineers). --rom Embedded: Developer (Developers) and Micro (Microcontroller students).
+
+5 In the main() function: --Create objects of Verifengg, Designengg, Developer, and Micro. --Assign values to students and specialization-specific data members.
+
+6.End the program.
+
+Program-5: Access Specifiers
+This program demonstrates the use of access specifiers and protected inheritance in C++. The base class Github has members with public, private, and protected access levels. The class User inherits from Github using protected inheritance, which means that the public and protected members of Github become protected in User. In the main() function, the program tries to access private and protected members, which is not allowed outside the class, leading to access errors. This illustrates how access specifiers control visibility and accessibility of class members in inheritance, ensuring data encapsulation and security of sensitive information.
+
+--> Algorithm:
+1.Start the program.
+
+2..Define a base class Github with: --A public function disp(). --A private function disp2(). --A protected data member repo.
+
+3.Define a derived class User that inherits protectedly from Github. --Add a public data member user_id. In the main() function: --Create an object g1 of Github and try to call disp2() (will cause an error because it is private). --Create an object u1 of User. --Assign a value to user_id. --Try to access disp() and repo (access errors occur because of protected inheritance).
+
+4.End the program.
